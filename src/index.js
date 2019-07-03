@@ -40,13 +40,13 @@ function connectCymine(options) {
         service: {
           //we're loading dynamic attribute values from our custom element.
           //see index.html.
-          root: host.getAttribute("intermineService")
+          root: "https://yeastmine.yeastgenome.org/yeastmine/service"
         },
         queryOn: {
-          "value": host.getAttribute("searchTerm"),
-          "extraValue": host.getAttribute("searchOrganism")
+          "value": "YGR067C",
+          "extraValue": "S. cerevisiae"
         },
-        nodeType: host.getAttribute("searchClass"),
+        nodeType: "Gene",
         compact: true,
         parentElem: host,
       });
